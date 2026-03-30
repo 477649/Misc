@@ -3,7 +3,9 @@ name: Forex Monitor
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "15,25,35,45,55 2-9 * * 0-5"
+    - cron: "5 3-10 * * 0-5"
+    - cron: "15 10 * * 0-5"
 
 permissions:
   contents: write
