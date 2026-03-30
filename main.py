@@ -379,9 +379,9 @@ def main():
             print(f"No update found for {bank_name}")
 
     if changed_files:
-        subject = f"Forex update found - {', '.join(changed_banks)} - {today_str()}"
+        subject = f"Forex Rate update found - {', '.join(changed_banks)} - {today_str()}"
         body = (
-            "Forex data update detected for:\n"
+            "Forex Rate data update detected for:\n"
             + "\n".join(f"- {b}" for b in changed_banks)
             + "\n\nAttached: latest Excel file(s)."
         )
